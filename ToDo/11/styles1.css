@@ -1,0 +1,39 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+
+#auth-section, #logout-section, #project-section, #task-section, #kanban-section {
+    margin-bottom: 20px;
+}
+
+#user-greeting {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.kanban-column {
+    flex: 1;
+    margin-right: 20px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    min-width: 200px;
+}
+
+.task-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.task-list li {
+    background-color: #f9f9f9;
+    margin-bottom: 5px;
+    padding: 5px;
+    border: 1px solid #ddd;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.task-list li:hover {
+    background-color: #e0e0e0;
+}

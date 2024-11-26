@@ -1,0 +1,45 @@
+/* Add some vinyl nuances and make it look real pretty */
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    background-color: #000000; /* Black represents the vinyl record surface */
+    color: #ffffff; /* White text for contrast */
+}
+
+#auth-section, #logout-section, #project-section, #task-section, #kanban-section {
+    margin-bottom: 20px;
+}
+
+#user-greeting {
+    display: inline-block;
+    margin-right: 10px;
+    color: #ff0000; /* Red text for user greeting */
+}
+
+.kanban-column {
+    flex: 1;
+    margin-right: 20px;
+    border: 2px solid #550000; /* Dark red border for columns */
+    padding: 10px;
+    min-width: 200px;
+    background-color: #222222; /* Slightly darker gray to simulate the vinyl grain */
+}
+
+.task-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.task-list li {
+    background-color: #333333; /* Darker gray background for tasks */
+    margin-bottom: 5px;
+    padding: 5px;
+    border: 1px solid #550000; /* Dark red border for tasks */
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.task-list li:hover {
+    background-color: #444444; /* Slightly lighter gray on hover */
+    transform: scale(1.02); /* Slight scaling effect to simulate vinyl grooves */
+}

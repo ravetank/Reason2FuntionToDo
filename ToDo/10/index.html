@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reason 2 Funk Task Manager</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            background-image: url('https://i.imgur.com/your-vinyl-background.jpg'); /* Replace with your vinyl background image */
+            background-size: cover;
+            background-position: center;
+        }
+        .vinyl-icon {
+            width: 24px;
+            height: 24px;
+            margin-right: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Reason 2 Funk Task Manager</h1>
+            <button id="toggle-dark-mode">Toggle Dark Mode</button>
+            <div id="auth-section">
+                <input type="text" id="username" placeholder="Username" required>
+                <select id="role">
+                    <option value="admin">Admin</option>
+                    <option value="user">User</option>
+                </select>
+                <button id="login-btn">Login</button>
+            </div>
+            <div id="logout-section" style="display: none;">
+                <button id="logout-btn">Logout</button>
+            </div>
+        </header>
+        <main>
+            <section id="project-section" style="display: none;">
+                <h2>Projects</h2>
+                <input type="text" id="project-name" placeholder="Add Project">
+                <button id="add-project-btn">Add Project</button>
+                <ul id="project-list"></ul>
+            </section>
+            <section id="task-section" style="display: none;">
+                <h2>Tasks for <span id="current-project-name"></span></h2>
+                <input type="text" id="search-task" placeholder="Search Tasks">
+                <input type="text" id="task-name" placeholder="Add Task">
+                <select id="task-priority">
+                    <option value="low">Low</option>
+                    <option value="medium">Medium</option>
+                    <option value="high">High</option>
+                </select>
+                <button onclick="addSubtask()">Add Subtask</button>
+                <input type="date" id="task-due-date" placeholder="Due Date (optional)">
+                <button id="add-task-btn">Add Task</button>
+                <ul id="task-list"></ul>
+            </section>
+            <section id="kanban-section" style="display: none;">
+                <h2>Kanban Board for <span id="kanban-project-name"></span></h2>
+                <div class="kanban-board">
+                    <div class="kanban-column" id="to-do-column">
+                        <h3>To Do</h3>
+                        <ul id="to-do-list"></ul>
+                    </div>
+                    <div class="kanban-column" id="in-progress-column">
+                        <h3>In Progress</h3>
+                        <ul id="in-progress-list"></ul>
+                    </div>
+                    <div class="kanban-column" id="done-column">
+                        <h3>Done</h3>
+                        <ul id="done-list"></ul>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kaingin Board</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="column" id="todo-column">
+            <h2>To Do</h2>
+            <button onclick="addTask('todo-column')">Add Task</button>
+            <div id="todo-tasks"></div>
+        </div>
+        <div class="column" id="in-progress-column">
+            <h2>In Progress</h2>
+            <div id="in-progress-tasks"></div>
+        </div>
+        <div class="column" id="done-column">
+            <h2>Done</h2>
+            <div id="done-tasks"></div>
+        </div>
+    </div>
+
+    <div class="sidebar">
+        <h3>Task Manager</h3>
+        <select id="task-to-assign">
+            <!-- Options will be populated dynamically -->
+        </select>
+        <select id="user-to-assign">
+            <option value="">Assign User</option>
+            <option value="user1">User 1</option>
+            <option value="user2">User 2</option>
+            <!-- Add more users as needed -->
+        </select>
+        <button onclick="assignTaskToUser()">Assign</button>
+    </div>
+
+    <script src="app.
+
+index.html
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kaingin Board</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="column" id="todo-column">
+            <h2>To Do</h2>
+            <button onclick="addTask('todo-column')">Add Task</button>
+            <div id="todo-tasks"></div>
+        </div>
+        <div class="column" id="in-progress-column">
+            <h2>In Progress</h2>
+            <div id="in-progress-tasks"></div>
+        </div>
+        <div class="column" id="done-column">
+            <h2>Done</h2>
+            <div id="done-tasks"></div>
+        </div>
+    </div>
+
+    <div class="sidebar">
+        <h3>Task Manager</h3>
+        <select id="task-to-assign">
+            <!-- Options will be populated dynamically -->
+        </select>
+        <select id="user-to-assign">
+            <option value="">Assign User</option>
+            <option value="user1">User 1</option>
+            <option value="user2">User 2</option>
+            <!-- Add more users as needed -->
+        </select>
+        <button onclick="assignTaskToUser()">Assign</button>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>

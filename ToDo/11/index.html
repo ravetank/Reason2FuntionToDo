@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Manager</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="auth-section">
+        <label for="username">Username:</label>
+        <input type="text" id="username" placeholder="Enter your username">
+        <button id="login-button">Login</button>
+    </div>
+
+    <div id="logout-section" style="display: none;">
+        <p id="user-greeting"></p>
+        <button id="logout-button">Logout</button>
+    </div>
+
+    <div id="project-section" style="display: none;">
+        <h2>Projects</h2>
+        <label for="project-name">Project Name:</label>
+        <input type="text" id="project-name" placeholder="Enter project name">
+        <button id="add-project-button">Add Project</button>
+        <ul id="project-list"></ul>
+    </div>
+
+    <div id="task-section" style="display: none;">
+        <h2>Tasks for <span id="current-project-title"></span></h2>
+        <label for="task-name">Task Name:</label>
+        <input type="text" id="task-name" placeholder="Enter task name">
+        <button id="add-task-button">Add Task</button>
+        <ul id="task-list"></ul>
+    </div>
+
+    <div id="kanban-section" style="display: none;">
+        <h2>Kanban Board for <span id="current-project-title-kanban"></span></h2>
+        <div class="kanban-column">
+            <h3>To Do</h3>
+            <ul id="to-do-list" class="task-list"></ul>
+        </div>
+        <div class="kanban-column">
+            <h3>In Progress</h3>
+            <ul id="in-progress-list" class="task-list"></ul>
+        </div>
+        <div class="kanban-column">
+            <h3>Done</h3>
+            <ul id="done-list" class="task-list"></ul>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>

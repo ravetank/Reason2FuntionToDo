@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reason 2 Funk Task Manager</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Reason 2 Funk Task Manager</h1>
+            <button id="toggle-dark-mode">Toggle Dark Mode</button>
+            <div id="auth-section">
+                <input type="text" id="username" placeholder="Username" required>
+                <select id="role">
+                    <option value="admin">Admin</option>
+                    <option value="user">User</option>
+                </select>
+                <button id="login-btn">Login</button>
+            </div>
+        </header>
+        <main>
+            <section id="project-section">
+                <h2>Projects</h2>
+                <input type="text" id="project-name" placeholder="Add Project">
+                <button id="add-project-btn">Add Project</button>
+                <ul id="project-list"></ul>
+            </section>
+            <section id="task-section" style="display: none;">
+                <h2>Tasks for <span id="current-project-name"></span></h2>
+                <input type="text" id="task-name" placeholder="Add Task">
+                <input type="date" id="task-due-date" placeholder="Due Date (optional)">
+                <button id="add-task-btn">Add Task</button>
+                <ul id="task-list"></ul>
+            </section>
+        </main>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
